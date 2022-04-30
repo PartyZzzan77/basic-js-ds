@@ -23,7 +23,7 @@ const { NotImplementedError } = require('../extensions/index.js');
  * }
  */
 function removeKFromList(l, k) {
-  if (!l.length) {
+  if (!!l.length) {
     return 'List is empty';
   }
   while (l && l.value === k) {
